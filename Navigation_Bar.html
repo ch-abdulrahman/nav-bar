@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@410&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #e3e0f0;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    #navbar {
+        background-color: #343a40;
+    }
+
+    #navbar ul {
+        overflow: auto;
+    }
+
+    #navbar li {
+        float: left;
+        list-style: none;
+        margin: 15px 5px;
+    }
+
+    .navobj a {
+        text-decoration: none;
+        color: white;
+        padding: 4px 7px;
+    }
+
+    .navobj a:hover {
+        color: rgb(221, 74, 74);
+    }
+
+    /* .navobj a:visited{
+        color: rgb(247, 220, 70);
+    } */
+
+    .navobj a:active {
+        background-color: white;
+        font-weight: 600;
+        color: #343a40;
+        border-radius: 7px;
+    }
+
+    .logo img {
+        width: 35px;
+        border-radius: 50%;
+        margin: -12px 0px;
+
+    }
+
+    .search {
+        float: right;
+    }
+
+    .search input {
+        width: 145px;
+        padding: 4px 4px;
+        margin: 10px;
+        /* border: 2px solid #25c7a4; */
+        /* border-radius: 10px; */
+        color: #fff;
+    }
+
+    .container {
+        background-color: #b3a6ec;
+        border: 3px solid black;
+        width: 100%;
+        margin: 15px auto;
+        padding: 15px 5px;
+    }
+
+    .container h1 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 5px auto;
+    }
+
+    .item_container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .item {
+        background-color: #25c7a4;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 15px 5px;
+        padding: 10px 15px;
+        width: 310px;
+        /* float: left; */
+        display: inline-block;
+    }
+
+    .para {
+        padding: 5px;
+    }
+
+    #box1, #box2, #box3, #box4, #box5 {
+        float: left;
+        width: 20%;
+    
+
+    }
+
+    /* #box2,  {
+        float: left;
+        width: 300px;
+    }
+
+    #box3 {
+        float: left;
+        width: 300px;
+    }
+
+    #box4 {
+        /* clear: both; */
+        width: 100%;
+    }
+
+    #box5 {
+        /* clear: both; */
+        width: 100%;
+    } */
+</style>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="logo"><a href="https://yahoo.com" target="blank"><img src="img/cg logo.png" alt="logo"></a></li>
+                <li class="navobj"><a href="https://google.com" target="blank">Home</a></li>
+                <li class="navobj"><a href="https://youtub.com" target="blank">Camera</a></li>
+                <li class="navobj"><a href="https://google.com" target="blank">Drone</a></li>
+                <li class="navobj"><a href="https://google.com" target="blank">About</a></li>
+                <li class="navobj"><a href="https://google.com" target="blank">Contact Us</a></li>
+                <div class="search">
+                    <label for="search">&#128269;</label>
+                    <input type="search" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Concept of Float and Clear</h1>
+            <div class="item_container">
+                <div class="item" id="box1">
+                    <h2 class="parah2">Best Cameras 1</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo quam
+                        dolores!
+                        Dolorem error
+                        illo
+                        debitis animi perspiciatis delectus, nisi laborum dignissimos harum recusandae aspernatur
+                        temporibus
+                        fugiat exercitationem nemo! Impedit natus iusto quas sequi sunt, consequuntur repellendus neque
+                        illo
+                        quam ipsa nihil nostrum, culpa voluptas eius voluptatum at assumenda modi?</p>
+                </div>
+                <div class="item" id="box2">
+                    <h2 class="parah2">Best Cameras 2</h2>
+                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit reprehenderit quis,
+                        amet
+                        consequatur
+                        totam
+                        beatae magni nihil officia cum harum hic architecto. Amet eos laborum labore illo velit illum
+                        necessitatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, sint! Minus, ab
+                        itaque!
+                        repellat, doloribus necessitatibus, eum voluptate labore perspiciatis. </p>
+                </div>
+                <div class="item" id="box3">
+                    <h2 class="parah2">Best Cameras 3</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus impedit
+                        eaque
+                        asperiores
+                        fugit
+                        voluptates quia alias ipsam dignissimos quisquam sequi voluptate hic voluptas fugiat velit,
+                        aspernatur
+                        facilis consequuntur ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe
+                        culpa
+                        recusandae, itaque quaerat eum illo, dolorum sapiente optio, obcaecati temporibus animi pariatur
+                        sunt
+                        aperiam vel quis deleniti error quas.</p>
+                </div>
+                
+                <div class="item" id="box4">
+                    <h2 class="parah2">Best Cameras 4</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus impedit
+                        eaque
+                        asperiores
+                        fugit
+                        voluptates quia alias ipsam dignissimos quisquam sequi voluptate hic voluptas fugiat velit,
+                        aspernatur
+                        facilis consequuntur ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe
+                        culpa
+                        recusandae, itaque quaerat eum illo, dolorum sapiente optio, obcaecati temporibus animi pariatur
+                        sunt
+                        aperiam vel quis deleniti error quas.</p>
+                </div>
+                <div class="item" id="box5">
+                    <h2 class="parah2">Best Cameras 5</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus impedit
+                        eaque
+                        asperiores
+                        fugit
+                        voluptates quia alias ipsam dignissimos quisquam sequi voluptate hic voluptas fugiat velit,
+                        aspernatur
+                        facilis consequuntur ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe
+                        culpa
+                        recusandae, itaque quaerat eum illo, dolorum sapiente optio, obcaecati temporibus animi pariatur
+                        sunt
+                        aperiam vel quis deleniti error quas.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
